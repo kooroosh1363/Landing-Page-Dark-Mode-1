@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@1,900&display=swap');
+
+
+:root{
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #f1f8fc;
+    --DarkOne: #312f3a;
+    --DarkTwo:#45424b;
+    --LightOne:#919191;
+    --LightTwo;#aaa;
+}
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/* img-css */
+img{
+    width: 100%;
+
+}
+/* img-css */
+
+
+
+/* a-link-css */
+a{
+    text-decoration: none;
+}
+/* a-link-css */
+
+/* big-wrapper-css */
+.big-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--backgroundColor);
+    overflow: hidden;
+    padding: 1.8rem 0.2rem;
+}
+/* big-wrapper-css */
+
+
+/* .container-css */
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 81rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index: 10;
+}
+
+header .container{
+    
+}
+/* .container-css */
+
+
+/* logo-css */
+.logo img{
+    width: 80px;
+}
+/* logo-css */
