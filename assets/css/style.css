@@ -42,9 +42,12 @@ a{
 .big-wrapper{
     width: 100%;
     min-height: 100vh;
+    display: flex;
     background-color: var(--backgroundColor);
     overflow: hidden;
     padding: 1.8rem 0.2rem;
+    flex-direction: column;
+    justify-content: space-between;
 }
 /* big-wrapper-css */
 
@@ -60,13 +63,142 @@ a{
 }
 
 header .container{
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 /* .container-css */
 
 
 /* logo-css */
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .logo img{
     width: 80px;
+    margin-right: 0.6rem;
+    margin-top: -0.6rem;
+}
+
+.logo h3{
+    color: var(--DarkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
 }
 /* logo-css */
+
+
+
+/* links-css */
+.links ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.links a{
+    color: var(--LightTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.links a:hover{
+    color: var(--hoverColor);
+    transform: scale(1.1);
+}
+
+/* links-css */
+
+
+
+/* Btn-css */
+.Btn{
+    display: inline-block;
+    padding: 0.9rem 1.6rem;
+    color: #fff !important;
+    background-color: var(--mainColor);
+    border-radius: 15px;
+    text-transform: capitalize;
+    transition: 0.3s;
+}
+
+.Btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1.1) !important;
+}
+/* Btn-css */
+
+
+
+/* show-case-css */
+.show-case .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+/* show-case-css */
+
+/* title-big-css */
+.title-big{
+    font-variant: 25px;
+    color: var(--DarkOne);
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+/* title-big-css */
+
+
+/* text-css */
+.text{
+    color: var(--LightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2.2;
+}
+/* text-css */
+
+
+
+/* show-case-Btn-css */
+.show-case .Btn{
+    box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.5);
+}
+/* show-case-Btn-css */
+
+
+/* s_else-css */
+.s_else{
+    width: 123%;
+    transform: translate(15% , 25px);
+}
+/* s_else-css */
+
+
+/* btn-toggle-css */
+.btn-toggle{
+    display: inline-block;
+    border: none;
+    background: var(--DarkTwo);
+    color: #fff;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.btn-toggle ion-icon{
+    line-height: 40px;
+}
+
+.btn-toggle ion-icon:last-child{
+    display: none;
+}
+/* btn-toggle-css */
