@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,900&family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@1,900&display=swap');
 
 
-:root{
+.light{
     --mainColor: #64bcf4;
     --hoverColor: #5bacdf;
     --backgroundColor: #f1f8fc;
@@ -9,6 +9,16 @@
     --DarkTwo:#45424b;
     --LightOne:#919191;
     --LightTwo;#aaa;
+}
+
+.dark{
+    --mainColor: #64bcf4;
+    --hoverColor: #5bacdf;
+    --backgroundColor: #192e3a;
+    --DarkOne: #f3f3f3;
+    --DarkTwo:#fff;
+    --LightOne:#ccc;
+    --LightTwo;#e7e3e3;
 }
 
 *,
@@ -100,7 +110,7 @@ header .container{
 }
 
 .links a{
-    color: var(--LightTwo);
+    color: var(--DarkTwo) ;
     margin-left: 4.5rem;
     display: inline-block;
     transition: 0.2s;
@@ -184,8 +194,8 @@ header .container{
 .btn-toggle{
     display: inline-block;
     border: none;
-    background: var(--DarkTwo);
-    color: #fff;
+    background: var(--LightOne);
+    color: rgb(70, 67, 67);
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -200,5 +210,10 @@ header .container{
 
 .btn-toggle ion-icon:last-child{
     display: none;
+}
+
+.btn-toggle:hover {
+    background: var(--mainColor);
+    color: #fff;
 }
 /* btn-toggle-css */
