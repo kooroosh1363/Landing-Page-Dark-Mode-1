@@ -202,18 +202,37 @@ header .container{
     border-radius: 50%;
     font-size: 1.2rem;
     transition: 0.3s;
+    outline: none;
 }
 
 .btn-toggle ion-icon{
     line-height: 40px;
 }
 
-.btn-toggle ion-icon:last-child{
+/* .btn-toggle ion-icon:last-child{
     display: none;
-}
+} */
 
 .btn-toggle:hover {
     background: var(--mainColor);
     color: #fff;
+}
+
+
+.big-wrapper.light .btn-toggle ion-icon:last-child{
+    display: none;
+}
+
+.big-wrapper .light .btn-toggle ion-icon:first-child{
+    display: block;
+}
+
+.big-wrapper .dark .btn-toggle ion-icon:last-child{
+    display: block;
+    
+}
+.big-wrapper.dark .btn-toggle ion-icon:first-child{
+    display: none;
+    
 }
 /* btn-toggle-css */
