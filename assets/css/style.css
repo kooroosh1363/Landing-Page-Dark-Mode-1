@@ -8,7 +8,7 @@
     --DarkOne: #312f3a;
     --DarkTwo:#45424b;
     --LightOne:#919191;
-    --LightTwo;#aaa;
+    --LightTwo:#aaa;
 }
 
 .dark{
@@ -18,7 +18,7 @@
     --DarkOne: #f3f3f3;
     --DarkTwo:#fff;
     --LightOne:#ccc;
-    --LightTwo;#e7e3e3;
+    --LightTwo:#e7e3e3;
 }
 
 *,
@@ -215,11 +215,11 @@ header .container{
 
 .btn-toggle:hover {
     background: var(--mainColor);
-    color: #fff;
+    /* color: #fff; */
 }
 
 
-.big-wrapper.light .btn-toggle ion-icon:last-child{
+.big-wrapper .light .btn-toggle ion-icon:last-child{
     display: none;
 }
 
@@ -231,8 +231,35 @@ header .container{
     display: block;
     
 }
-.big-wrapper.dark .btn-toggle ion-icon:first-child{
+.big-wrapper .dark .btn-toggle ion-icon:first-child{
     display: none;
     
 }
 /* btn-toggle-css */
+
+
+
+/* copy-css */
+.copy{
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    animation: appear 1s 1 both;
+}
+/* copy-css */
+
+
+/* copy-css */
+
+
+/* keyframe-css */
+@keyframes appear{
+    0%{
+        clip-path: circle(30% at -25% -25%);
+    }
+    100%{
+        clip-path: circle(150% at 0 0);
+    }
+}
+/* keyframe-css */
