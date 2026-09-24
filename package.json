@@ -1,0 +1,15 @@
+{
+  "name": "raad-adaptive-landing",
+  "version": "2.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A responsive landing page with persistent system-aware light and dark themes.",
+  "scripts": {
+    "test": "node --test",
+    "check:syntax": "node --check assets/js/theme.js && node --check assets/js/apps.js && node --check tests/theme.test.js && node --check tests/markup.test.js",
+    "check": "npm run check:syntax && npm test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
